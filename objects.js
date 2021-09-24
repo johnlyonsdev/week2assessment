@@ -15,8 +15,14 @@
 */
 
 //CODE HERE
-
-
+const me = {
+  firstName: "John",
+  state : "Texas",
+  age: 26,
+  greeter: function() {
+    return `Hello! My name is ${me.firstName} and I live in ${me.state}`
+  }
+}
 
 
 
@@ -45,3 +51,16 @@
 */
 
 //CODE HERE
+function carFactory(make, model, year) {
+  const obj = {
+    make: make,
+    model: model,
+    year: year 
+  }
+  if (obj.year > 2018) {
+    obj.isNew = true
+  } else {
+    obj.isNew = false
+  }
+  return obj
+}
